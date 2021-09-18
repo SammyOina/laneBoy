@@ -1,16 +1,16 @@
-int ENB = 2;
+int ENB = 2;              //define motor pins
 int IN3 = 0;
 int IN4 = 1;
 int ENA = 8;
 int IN1 = 7;
 int IN2 = 6;
-void driveForever(){
+void drive(){
   digitalWrite(IN1, LOW);
   digitalWrite(IN2, HIGH);
   digitalWrite(IN3, HIGH);
   digitalWrite(IN4, LOW);
 }
-void brakeMyFall(){
+void brake(){
   digitalWrite(IN1, LOW);
   digitalWrite(IN2, LOW);
   digitalWrite(IN3, LOW);
